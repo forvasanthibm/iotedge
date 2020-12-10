@@ -87,6 +87,7 @@ spec:
       imagePullSecrets:
         - name: regcreds
       {{ end }}
+{{- if .Values.iotedged.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.iotedged.nodeSelector | indent 8 }}
 {{- end }}
