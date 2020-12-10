@@ -87,12 +87,6 @@ spec:
       imagePullSecrets:
         - name: regcreds
       {{ end }}
-      securityContext:
-        runAsNonRoot: true
-      {{- if .Values.iotedged.fsGroup }}
-        fsGroup: {{ .Values.iotedged.fsGroup }}
-      {{ end }}
-{{- if .Values.iotedged.nodeSelector }}
       nodeSelector:
 {{ toYaml .Values.iotedged.nodeSelector | indent 8 }}
 {{- end }}
