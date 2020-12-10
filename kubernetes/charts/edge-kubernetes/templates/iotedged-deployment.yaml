@@ -89,7 +89,7 @@ spec:
       {{ end }}
       securityContext:
         runAsNonRoot: true
-        runAsUser: 1000
+        runAsUser:
       {{- if .Values.iotedged.fsGroup }}
         fsGroup: {{ .Values.iotedged.fsGroup }}
       {{ end }}
