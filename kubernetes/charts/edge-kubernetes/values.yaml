@@ -248,7 +248,7 @@ edgeAgent:
 # Manual provisioning configuration using a connection string
 provisioning:
   source: "manual"
-  deviceConnectionString: "HostName=vasanth-iot-testing.azure-devices.net;DeviceId=vasanth-iot-edge-device;SharedAccessKey=P6n3NoHwLhXwVbtNhkgSNiSXbRX3FUtaKmh8EC4qVAk="
+  deviceConnectionString: "HostName=vasanth-iot-testing.azure-devices.net;DeviceId=vasanth-iot-edge-device;SharedAccessKey=/u9NKCN9+mjEKP30Jb5wl7LwSEoTV9dWGIideNuQ6bM="
   dynamicReprovisioning: false
 
 # Manual provisioning configuration using an X.509 identity certificate
